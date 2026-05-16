@@ -33,10 +33,10 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 21
+          java-version: 23
           cache: maven
 
-      # Compilar proyecto
+      # Compilar proyecto (incluyendo tests)
       - name: Compilar proyecto
         run: mvn clean package
 
